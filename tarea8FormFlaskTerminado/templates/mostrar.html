@@ -1,0 +1,23 @@
+<html>
+	<body>
+		<div>
+			<h2>Datos:</h2>
+		</div>
+		<div>
+			{% for dato in datos %}
+				<div class='row'>
+					<div class='column'>{{dato.id}}</div>
+					<div class='column'>{{dato.nombre}}</div>
+					<div class='column'>{{dato.ape_mat}}</div>
+					<div class='column'>{{dato.ape_pat}}</div>
+					<div class='column'>{{dato.telefono}}</div>
+					<div class='column'>{{dato.sexo}}</div>
+					<div class='column'>{{dato.direccion}}</div>
+				</div>
+			{% endfor %}
+		</div>
+		<div>
+			<a href = '/'>Regresar</a>
+		</div>
+	</body>
+</html>
